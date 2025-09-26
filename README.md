@@ -12,11 +12,6 @@ Execute múltiplas requisições HTTP em **paralelo** a partir de um comando `cu
 
 - Node.js >= 18  
 - Pacotes NPM:
-
-```bash
-npm install axios curlconverter
-```
-Ou
 ```bash
 npm i
 ```
@@ -49,7 +44,7 @@ curl -X POST https://api.exemplo.com/data \
 
 ---
 
-## 🔐 Configuração do curl.txt
+## Configuração do curl.txt
 
 1. Copie o arquivo de exemplo:
 ```bash
@@ -64,6 +59,19 @@ curl -X POST $ENDPOINT \
 -d '{"chave":"valor"}'
 ```
 > ⚠️ Nunca envie `curl.txt` com dados sensíveis para o GitHub. Use sempre o `.gitignore`.
+
+---
+
+## Configuração do .env
+
+1. Copie o arquivo de exemplo:
+```bash
+cp .env.example .env
+```
+2. Edite `.env`:
+- RETRY_ENABLED: boolean, determinar se terá ou não retentativas
+- MAX_RETRIES: int, determina quantas retentativas irão ocorrer caso o RETRY_ENABLED seja `true`
+- TIMEOUT_MS: int, determina o tempo de timeout, caso 0 não há timeout
 
 ---
 
