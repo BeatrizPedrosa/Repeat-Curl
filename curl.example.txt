@@ -1,0 +1,3 @@
+curl -X POST $ENDPOINT \
+-H "Authorization: Bearer $TOKEN" \
+-d '{"chave":"valor"}'

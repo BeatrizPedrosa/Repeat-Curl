@@ -1,0 +1,25 @@
+{
+  "name": "repeat-curl",
+  "version": "1.0.0",
+  "description": "O projeto executar múltiplas requisições HTTP em paralelo a partir de um comando curl armazenado em um arquivo.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "curls": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeatrizPedrosa/Repeat-Curl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeatrizPedrosa/Repeat-Curl/issues"
+  },
+  "homepage": "https://github.com/BeatrizPedrosa/Repeat-Curl#readme",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "curlconverter": "^4.12.0"
+  }
+}
